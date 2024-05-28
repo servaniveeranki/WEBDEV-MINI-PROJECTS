@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    background: #282bd8; /* Background color changed to white */
+  }
+  .container{
+    position: relative;
+    width: 400px;
+    background: #f7f7fa; /* Background color changed to red */
+    padding: 20px 30px;
+    border: 1px solid #2ccad0; /* Border color changed to white */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container .post{
+    display: none;
+  }
+  .container .text{
+    font-size: 25px;
+    color: #eddfdf; /* Text color changed to white */
+    font-weight: 500;
+  }
+  .container .edit{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    font-size: 16px;
+    color: #120eed; /* Text color changed to white */
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .container .edit:hover{
+    text-decoration: underline;
+  }
+  .container .star-widget input{
+    display: none;
+  }
+  .star-widget label{
+    font-size: 40px;
+    color: #125de9; /* Star color changed to white */
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+  }
+  input:not(:checked) ~ label:hover,
+  input:not(:checked) ~ label:hover ~ label{
+    color: #d8cf13; /* Hover color changed to white */
+  }
+  input:checked ~ label{
+    color: #f7da05; /* Checked color changed to white */
+  }
+  input#rate-5:checked ~ label{
+    color: #f3e305; /* Checked color for rate-5 changed to red */
+    text-shadow: 0 0 20px rgb(237, 229, 223);
+  }
+  #rate-1:checked ~ form header:before{
+      content: "I just hate it 😠";
+    }
+    #rate-2:checked ~ form header:before{
+      content: "Performance is bad 😞";
+    }
+    #rate-3:checked ~ form header:before{
+      content: "It is good 🙂";
+    }
+    #rate-4:checked ~ form header:before{
+      content: "It is awesome to work here 😊";
+    }
+    #rate-5:checked ~ form header:before{
+      content: "Perfect job I am just satisfied!!😃";
+    }  
+  .container form{
+    display: none;
+  }
+  input:checked ~ form{
+    display: block;
+  }
+  form header{
+    width: 100%;
+    font-size: 25px;
+    color: #eddddd; /* Header text color changed to red */
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  form .textarea{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #210909; /* Text color changed to white */
+    border: 1px solid #fff; /* Border color changed to white */
+    background: #afa4df; /* Background color changed to red */
+    padding: 10px;
+    font-size: 17px;
+    resize: none;
+  }
+  .textarea textarea:focus{
+    border-color: #fff; /* Border color on focus changed to white */
+  }
+  form .btn{
+    height: 45px;
+    width: 100%;
+    margin: 15px 0;
+  }
+  form .btn button{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff; /* Border color changed to white */
+    outline: none;
+    background: #cec265; /* Background color changed to red */
+    color: #fff; /* Text color changed to white */
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  form .btn button:hover{
+    background: #2407e0; /* Hover background color changed to white */
+    color: #f3eeee; /* Hover text color changed to red */
+  }
+  img{
+    width:400px;
+    border:10px solid rgb(48, 40, 40);
+    box-shadow:10px 5px 5px rgb(237, 229, 223); ;
+  }

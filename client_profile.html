@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> client profile page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            background: #31304d;
+            margin: 0;
+        }
+        a{
+            text-decoration:none;
+        }
+
+        .ui-w-80 {
+            width: 80px !important;
+            height: auto;
+        }
+
+        .btn-default {
+            border-color: red;
+            background: red;
+            color: #fff;
+        }
+
+        label.btn {
+            margin-bottom: 0;
+        }
+
+        .btn-primary {
+            border-color: rgb(38, 129, 38);
+            background: rgb(38, 129, 38);
+            color: #fff;
+            margin-right:450px;
+            margin-top:-600px;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+
+        .text-light {
+            color: #babbbc !important;
+        }
+
+        .btn-facebook {
+            border-color: rgba(0, 0, 0, 0);
+            background: #3b5998;
+            color: #fff;
+        }
+
+        .btn-instagram {
+            border-color: rgba(0, 0, 0, 0);
+            background: #000;
+            color: #fff;
+        }
+
+        .card {
+            background-clip: padding-box;
+            box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
+            border-radius: 35px;
+            padding: 10px;
+            margin-bottom: 20px;
+            margin-top: 80px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+
+        .row-bordered {
+            overflow: hidden;
+        }
+
+        .account-settings-fileinput {
+            position: absolute;
+            visibility: hidden;
+            width: 1px;
+            height: 1px;
+            opacity: 0;
+        }
+
+        .account-settings-links .list-group-item.active {
+            font-weight: bold !important;
+        }
+
+        html:not(.dark-style) .account-settings-links .list-group-item.active {
+            background: transparent !important;
+        }
+
+        .account-settings-multiselect~.select2-container {
+            width: 100% !important;
+        }
+
+        .light-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
+
+        .light-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
+
+        .material-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
+
+        .material-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
+
+        .dark-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(255, 255, 255, 0.03) !important;
+        }
+
+        .dark-style .account-settings-links .list-group-item.active {
+            color: #fff !important;
+        }
+
+        .light-style .account-settings-links .list-group-item.active {
+            color: #4e5155 !important;
+        }
+
+        .light-style .account-settings-links .list-group-item {
+            padding: 0.85rem 1.5rem;
+            border-color: rgba(24, 28, 33, 0.03) !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container light-style flex-grow-1 container-p-y">
+        <div class="card overflow-hidden">
+            <div class="row no-gutters row-bordered row-border-light">
+                <div class="col-md-3 pt-0">
+                    <div class="list-group list-group-flush account-settings-links">
+                        <a class="list-group-item list-group-item-action active" data-toggle="list"
+                            href="#account-general">General</a>
+
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-password">Current password</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-info">Info</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-social-links">Social links</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list"
+                            href="#account-connections">Connections</a>
+
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active show" id="account-general">
+                            <div class="card-body media align-items-center">
+                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt
+                                    class="d-block ui-w-80" />
+                                <div class="media-body ml-4">
+                                    <label class="btn btn-outline-primary">
+                                        Upload new photo
+                                        <input type="file" class="account-settings-fileinput" />
+                                    </label>
+                                    &nbsp;
+                                    <button type="button" class="btn btn-default md-btn-flat">
+                                        Reset
+                                    </button>
+                                    <div class="text-light small mt-1">
+                                        Allowed JPG, GIF or PNG. Max size of 800K
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0" />
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label class="form-label">Username:</label>
+                                    <div class="form-control-static">ZENTRO__MINDS</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Company name:</label>
+                                    <div class="form-control-static">ZENTRO MINDS</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Name:</label>
+                                    <div class="form-control-static">RAMA KRISHNA</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">E-mail</label>
+                                    <div class="form-control-static">rama.k@gmail.com</div>
+                                    <div class="alert alert-warning mt-3">
+                                        Your email is not confirmed. Please check your inbox.<br />
+                                        <a href="javascript:void(0)">Resend confirmation</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Position:</label>
+                                    <div class="form-control-static">MANAGER</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">About company:</label>
+                                    <div class="form-control-static">Zentro Minds is a leading technology company renowned for its innovative solutions and cutting-edge advancements across various industries. Established with a vision to revolutionize the digital landscape, Zentro Minds has emerged as a trailblazer in delivering transformative technologies and services to its global clientele.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Services:</label>
+                                    <div class="form-control-static">Zentro Minds offers a comprehensive suite of services designed to meet the diverse needs of our clients:
+
+                                        Digital Transformation: We help businesses navigate the complexities of digital transformation, leveraging technology to streamline processes, enhance customer experiences, and drive growth.
+                                        <br>
+                                        <br>                                        
+                                        Data Analytics: Our advanced data analytics solutions empower organizations to unlock the full potential of their data, gaining valuable insights and driving informed decision-making.
+                                        <br>
+                                        <br>
+                                        AI and Machine Learning: We harness the power of artificial intelligence and machine learning to develop intelligent solutions that automate processes, optimize operations, and drive innovation.
+                                        <br>
+                                        <br>
+                                        Cloud Computing: Our cloud computing services enable businesses to scale and adapt to changing demands, leveraging the flexibility and scalability of cloud infrastructure.</div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Company Address:</label>
+                                    <div class="form-control-static">WHITE FIELD,BENGALURU,KARANATAKA</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-password">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+                                    <label class="form-label">Current password</label>
+                                    <div class="form-control-static">rama@1995</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="account-info">
+                            <div class="card-body pb-2">
+                                <div class="form-group">
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Birthday</label>
+                                    <div class="form-control-static">May 13,1995
+
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Country</label>
+                                    <div class="form-control-static">India</div>
+                                </div>
+                            </div>
+                            <hr class="border-light m-0" />
+                            <div class="card-body pb-2">
+                                <h6 class="mb-4">Contacts</h6>
+                                <div class="form-group">
+                                    <label class="form-label">Phone</label>
+                                    <div class="form-control-static">(+91)123 4567 890 </div>
+
+
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Website</label>
+                                    <div class="form-control-static">www.opurtunata.com</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="account-connections">
+                    <div class="card-body">
+                        <button type="button" class="btn btn-twitter">
+                            Connect to <strong>Twitter</strong>
+                        </button>
+                    </div>
+                    <hr class="border-light m-0" />
+                    <div class="card-body">
+                        <h5 class="mb-2">
+                            <a href="javascript:void(0)" class="float-right text-muted text-tiny"><i
+                                    class="ion ion-md-close"></i> Remove</a>
+                            <i class="ion ion-logo-google text-google"></i>
+                            You are connected to Google:
+                        </h5>
+                        <a href="/cdn-cgi/l/email-protection" class="cf_email"
+                            data-cfemail="f9979498818e9c9595b994989095d79a9694">[email&#160;protected]</a>
+                    </div>
+                    <hr class="border-light m-0" />
+                    <div class="card-body">
+                        <button type="button" class="btn btn-facebook">
+                            Connect to <strong>Facebook</strong>
+                        </button>
+                    </div>
+                    <hr class="border-light m-0" />
+                    <div class="card-body">
+                        <button type="button" class="btn btn-instagram">
+                            Connect to <strong>Instagram</strong>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-right mt-3">
+                <a href="index.html"><button type="button" class="btn btn-primary">Feedback</button></a>
+            </div>            
+            <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+            <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript"></script>
+</body>
+
+</html>
