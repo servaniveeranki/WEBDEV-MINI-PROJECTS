@@ -3,103 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEEDBACK</title>
-    <link rel = "stylesheet" type = "text/css" href = "style.css">
-
-    <link   rel = "stylesheet" type = "text/css" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
+    <title>CHAT APPLICATION</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <div class = "wrapper">
-        <h1>Our Happy Customer Reviews</h1>
-        <h5>Check what they say about us...</h5>
-
-        <!-------review cards-->
-        <div class = "cards">
-            <div class = "card">
-                <img src = "https://i.pinimg.com/564x/db/62/2f/db622f596ac659f209ddad8acd27c2c3.jpg">
-                <p>My self Aruna Sinha I am  currently seeking a position as a Software Intern in Zentro company. I am recieving  a salary of range  25,000 to 35,000 .I am satisifed with my job which is collaborative has innovative team culture and development.Our company maintain good colloborations with the foreign companies.</p>
-                <h2>Aruna Sinha</h2>
-                <h4>Software intern</h4>
-                <div class = "reviews">
-                    <i class = "far fa-star"></i>
-                    <i class = "fa fa-star"></i>
-                    <i class = "fa fa-star"></i>
-                    <i class = "fa fa-star"></i>
-                    <i class = "fa fa-star"></i>              
+    <div class="container">
+            <div class="leftside">
+                <div class="header">
+            <div class="userimg">
+                <img src="https://i.pinimg.com/564x/2c/19/1f/2c191f9d0100a4cce5e8cffd7f4637f5.jpg" class="cover">
+            </div>
+            <ul class="nav_icons">
+                <li><ion-icon name="scan-circle-outline"></ion-icon></li>
+                <li><ion-icon name="chatbox"></ion-icon></li>
+                <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+            </ul>
+            </div>
+                <!-- Search -->
+        <div class="search_chat">
+            <div>
+                <input type="text" placeholder="Search or start new chat">
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+            </div>
+            <!-- Chat list -->
+        <div class="chatlist">
+            <div class="block active">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/564x/50/be/1f/50be1fcb924da39fe187a598a715d991.jpg" class="cover">
+                </div>
+                <div class = "details">
+                    <div class = "listhead">
+                        <h4>RAMA KRISHNA HR</h4>
+                        <p class = "time">10:56</p>
+                    </div>
+                    <div class = "message_p">
+                        <p>GOOD MORNING,INTERN YOU HAVE APPLIED JOB ON OUR WEBSITE INTRODUCE YOURSELF?</p>
+                    </div>
                 </div>
             </div>
-            <div class = "card">
-                <img src = "https://i.pinimg.com/564x/1c/9c/a8/1c9ca8f7eff97fd1bf63ba877cdfefd0.jpg">
-                <p>I have been working as a 3D Designer at Zentro Company for the past 3 years. The company has a great work culture and provides ample opportunities . I have learned so much  new things during my time here. I highly recommend Zentro Company to anyone looking for a challenging and rewarding career in 3D Design.</p>
-                <h2>Krishna Kumar</h2>
-                <h4>3D-Designer</h4>
-                <div class = "reviews">
-                        <i class = "far fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>                  
+            <div class="block unread">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/564x/fe/d7/67/fed76761ed57b363b2994c1c73c30358.jpg" class="cover">
+                </div>
+                <div class = "details">
+                    <div class = "listhead">
+                        <h4>ABDUL TEAM LEAD</h4>
+                        <p class = "time">9:30</p>
+                    </div>
+                    <div class = "message_p">
+                        <p>GOOD MORNING,INTERN IF YOU HAVE ANY QUERIES ABOUT PROJECT CONTACT ME.</p>
+                        <b>1</b>
+                    </div>
                 </div>
             </div>
-            <div class = "card">
-                <img src = "https://i.pinimg.com/564x/aa/b0/4e/aab04e5602e20fffd726f4a84dded3e5.jpg">
-                <p> "I am delighted to share my experience working at Zentro Company as an IT professional. I have had the opportunity to collaborate with highly innovative and forward-thinking colleagues, contributing to a dynamic and stimulating work environment.Zentro fosters a culture of continuous learning and development.</p>
-                <h2>Sophia Joseph</h2>
-                <h4>IT Professional at Zentro Company</h4>
-                <div class = "reviews">
-                        <i class = "far fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>
-                        <i class = "fa fa-star"></i>                 
+            <div class="block">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/736x/80/21/00/802100b26f2a4af38317168d074e35cc.jpg" class="cover">
+                </div>
+                <div class = "details">
+                    <div class = "listhead">
+                        <h4>CHARITHA MANAGER</h4>
+                        <p class = "time">10:30</p>
+                    </div>
+                    <div class = "message_p">
+                        <p>GOOD MORNING,INTERN IF YOU HAVE ANY QUERIES ABOUT YOUR JOB CONTACT ME.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="block unread">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/564x/9b/c5/0d/9bc50d8573694fd11ab14d221a5a7ace.jpg" class="cover">
+                </div>
+                <div class = "details">
+                    <div class = "listhead">
+                        <h4>MAHESH PRODUCT MANAGER</h4>
+                        <p class = "time">11:30</p>
+                    </div>
+                    <div class = "message_p">
+                        <p>GOOD MORNING,INTERN IF YOU HAVE ANY QUERIES ABOUT PROJECT CONTACT ME.</p>
+                        <b>1</b>
+                    </div>
+                </div>
+            </div>
+            <div class="block unread">
+                <div class="imgbx">
+                    <img src="https://i.pinimg.com/564x/61/51/f2/6151f22388ee9895c176193f4e219351.jpg" class="cover">
+                </div>
+                <div class = "details">
+                    <div class = "listhead">
+                        <h4>SNEHA COUSIN</h4>
+                        <p class = "time">12:30</p>
+                    </div>
+                    <div class = "message_p">
+                        <p>HEY,Are u interested in any part-time jobs.</p>
+                        <b>1</b>
+                    </div>
                 </div>
             </div>
         </div>
-       <a href = "index1.html"><button>Add comment</button></a> 
-    </div>     
+    </div>          
+                     
+           
+        <div class="rightside">
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <img src="https://i.pinimg.com/564x/50/be/1f/50be1fcb924da39fe187a598a715d991.jpg " class = "cover">
+                    </div>
+                    <h4>RAMA KRISHNA HR <br><span>Online</span></h4>
+                </div>
+                <ul class="nav_icons">
+                    <li><ion-icon name="chatbox"></ion-icon></li>
+                    <li><ion-icon name="ellipsis-vertical"></ion-icon></li>
+            </ul>
+            </div>
+            <div class="chatbox">
+                <div class = "message frnd_message">
+                    <p>GOOD MORNING,INTERN YOU HAVE APPLIED JOB ON OUR WEBSITE INTRODUCE YOURSELF?<br><span>10.57</span></p>
+                </div>
+                <div class = "message my_message">
+                    <p>GOOD MORNING SIR,MYSELF POOJITHA I HAVE COMPLETED MY BTECH -CSE IN IIIT SRICITY.MY DOMAIN OF INTEREST IS IN DATA SCIENCE FIELD.<br><span>10.58</span></p>
+                </div> 
+                <div class = "message frnd_message">
+                    <p>GOOD TO HEAR THAT,SO WHAT DO YOU EXPECT FROM OUR COMPANY? <br><span>10.58</span></p>
+                </div>
+                <div class = "message my_message">
+                    <p>As an intern, I expect to gain valuable hands-on experience, receive guidance for professional growth, and contribute effectively to the team's goals. I look forward to fostering strong relationships and creating a supportive work environment.<br><span>10.59</span></p>
+                </div> 
+                <div class = "message frnd_message">
+                    <p>GOOD WORK,LOOKING FORWARD TO YOUR PERFORMANCE ,TOMORROW COME TO OFFICE DESK FOR FURTHER PROCEDURES.<br><span>11.00</span></p>
+                </div>
+                <div class = "message my_message">
+                    <p>THANK YOU SO MUCH SIR I MAKE SURE MY FULL EFFORTS CAN GET USED TO IMPROVE MY DEVELOPMENT. <br><span>11.01</span></p>
+                </div>           
+            </div>
+            <div class="chatbox_input">
+                <ion-icon name="happy-outline"></ion-icon>
+                <ion-icon name="attach-outline"></ion-icon>
+                <input type = "text" placeholder = "Type a message">
+                <ion-icon name="mic-outline"></ion-icon>
+    
+            </div>
+        </div>          
+
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
